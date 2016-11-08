@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway.eot');
+    src: url('../fonts/Raleway/Raleway.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway/Raleway.woff') format('woff'), url('../fonts/Raleway/Raleway.ttf') format('truetype'), url('../fonts/Raleway/Raleway.svg#Raleway-Light') format('svg');
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../fonts/Alegreya/Alegreya.eot');
+    src: url('../fonts/Alegreya/Alegreya.eot?#iefix') format('embedded-opentype'), url('../fonts/Alegreya/Alegreya.woff') format('woff'), url('../fonts/Alegreya/Alegreya.ttf') format('truetype'), url('../fonts/Alegreya/Alegreya.svg#Alegreya') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #141E30;
+    background: -webkit-linear-gradient(to left, #141E30, #243B55);
+    background: linear-gradient(to left, #141E30, #243B55);
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+    border-radius: 10px;
+    min-height: 50vh;
+    min-width: 70%;
+    align-items: center;
+    display: none;
+}
+
+.msgDiv {
+    width: 50%;
+    padding: 20px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.imgDiv {
+    width: 40%;
+}
+
+.imgDiv img {
+    -webkit-filter: drop-shadow(5px 5px 5px #fff);
+    filter: drop-shadow(5px 5px 5px #fff);
+    margin-left: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: Raleway, sans-serif;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Raleway, sans-serif;
+    margin: 35px 0;
+}
+
+.startButton {
+    font-size: 40px;
+    text-shadow: 2px 2px #666;
+    border: dotted 2px #ccc;
+    border-radius: 5px;
+    font-family: Alegreya, sans-serif;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 10px 20px;
+}
+
+.startButton:hover {
+    background: rgba(0, 0, 0, 0.2);
+    border: solid 2px #ccc;
+    transition: all .3s ease;
+}
+
+.qButton {
+    font-size: 40px;
+    text-shadow: 2px 2px #666;
+    border: dotted 2px #ccc;
+    border-radius: 5px;
+    font-family: Alegreya, sans-serif;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+.qButton:hover {
+    background: rgba(0, 0, 0, 0.2);
+    border: solid 2px #ccc;
+    transition: all .3s ease;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Raleway, sans-serif;
+    margin: 25px 0;
+    font-style: italic;
+    text-shadow: 1px 1px #666;
+}
+
+@media (max-width: 700px) {
+    .imgDiv img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .imgDiv {
+        display: none;
+    }
+    .msgDiv {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .startButton {
+        font-size: 24px;
+    }
+    .qButton {
+        font-size: 24px;
+    }
+}
+
+
+.carousel {
+    height: 20px;
+    width: 20px;
+    background-color: #ccc;
+    border-radius: 100%;
+    -webkit-animation: move 1s infinite;
+}
+
+
+@keyframes move {
+  0% {
+      transform: translateY(-10px) scale(1);
+  }
+  18% {
+      transform: translateY(-10px) scale(0.9);
+  }
+  36% {
+      transform: translate(10px, -10px) scale(0.8);
+  }
+  54% {
+      transform: translate(10px, 10px) scale(0.7);
+  }
+  72% {
+      transform: translate(-10px, 10px) scale(0.8);
+  }
+  88% {
+      transform: translate(-10px, -10px) scale(0.9);
+  }
+  100% {
+      transform: translate(0, -10px) scale(1);
+  }
+}
+@-webkit-keyframes move {
+  0% {
+      transform: translateY(-10px) scale(1);
+  }
+  18% {
+      transform: translateY(-10px) scale(0.9);
+  }
+  36% {
+      transform: translate(10px, -10px) scale(0.8);
+  }
+  54% {
+      transform: translate(10px, 10px) scale(0.7);
+  }
+  72% {
+      transform: translate(-10px, 10px) scale(0.8);
+  }
+  88% {
+      transform: translate(-10px, -10px) scale(0.9);
+  }
+  100% {
+      transform: translate(0, -10px) scale(1);
+  }
+}

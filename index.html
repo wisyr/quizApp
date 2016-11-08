@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>The Penguins</title>
+</head>
+
+<body>
+<div class='container'>
+
+    <div class='carousel'>
+    </div>
+
+    <div class='content'>
+        <div class='msgDiv'>
+            <h1>Welcome to The Penguins food festival.</h1>
+            <h2>Are you hungry? Let The Penguins choose a meal for you!</h2>
+            <button class='startButton'>Start the quiz!</button>
+        </div>
+        <div class='msgDiv hidden' id='firstQ'>
+            <h2>Should it contain a meat?</h2>
+            <button class='qButton' id='qButton1Y'>Yes</button>
+            <button class='qButton' id='qButton1N'>No</button>
+        </div>
+        <div class='msgDiv hidden' id='secondQ'>
+            <h2>Hmm, do you like pasta?</h2>
+            <button class='qButton' id='qButton2Y'>Yes</button>
+            <button class='qButton' id='qButton2N'>No</button>
+        </div>
+        <div class='msgDiv hidden' id='thirdQ'>
+            <h2>Something to drink?</h2>
+            <button class='qButton' id='qButton3Y'>Yes</button>
+            <button class='qButton' id='qButton3N'>No</button>
+        </div>
+        <div class='msgDiv hidden' id='finalScreen'>
+            <h2>Voilà!</h2>
+            <p id='result'></p>
+            <h2>Bon appétit.</h2>
+            <button class='startButton' id='tryAgainButton'>Try Again?</button>
+        </div>
+
+        <div class='imgDiv'>
+            <img class='firstPic' src='medias/p1.png'>
+            <img class='secondPic hidden' src='medias/p2.png'>
+            <img class='thirdPic hidden' src='medias/p3.png'>
+            <img class='fourthPic hidden' src='medias/p4.png'>
+            <img class='fifthPic hidden' src='medias/p5.png'>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
