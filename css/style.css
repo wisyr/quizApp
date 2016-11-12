@@ -1,13 +1,61 @@
 @font-face {
     font-family: 'Raleway';
-    src: url('../fonts/Raleway/Raleway.eot');
-    src: url('../fonts/Raleway/Raleway.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway/Raleway.woff') format('woff'), url('../fonts/Raleway/Raleway.ttf') format('truetype'), url('../fonts/Raleway/Raleway.svg#Raleway-Light') format('svg');
+    src: url("../fonts/Raleway/Raleway.eot");
+    src: url("../fonts/Raleway/Raleway.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway.woff") format("woff"), url("../fonts/Raleway/Raleway.ttf") format("truetype"), url("../fonts/Raleway/Raleway.svg#Raleway-Light") format("svg");
 }
 
 @font-face {
     font-family: 'Alegreya';
-    src: url('../fonts/Alegreya/Alegreya.eot');
-    src: url('../fonts/Alegreya/Alegreya.eot?#iefix') format('embedded-opentype'), url('../fonts/Alegreya/Alegreya.woff') format('woff'), url('../fonts/Alegreya/Alegreya.ttf') format('truetype'), url('../fonts/Alegreya/Alegreya.svg#Alegreya') format('svg');
+    src: url("../fonts/Alegreya/Alegreya.eot");
+    src: url("../fonts/Alegreya/Alegreya.eot?#iefix") format("embedded-opentype"), url("../fonts/Alegreya/Alegreya.woff") format("woff"), url("../fonts/Alegreya/Alegreya.ttf") format("truetype"), url("../fonts/Alegreya/Alegreya.svg#Alegreya") format("svg");
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-10px) scale(1);
+    }
+    18% {
+        transform: translateY(-10px) scale(0.9);
+    }
+    36% {
+        transform: translate(10px, -10px) scale(0.8);
+    }
+    54% {
+        transform: translate(10px, 10px) scale(0.7);
+    }
+    72% {
+        transform: translate(-10px, 10px) scale(0.8);
+    }
+    88% {
+        transform: translate(-10px, -10px) scale(0.9);
+    }
+    100% {
+        transform: translate(0, -10px) scale(1);
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        transform: translateY(-10px) scale(1);
+    }
+    18% {
+        transform: translateY(-10px) scale(0.9);
+    }
+    36% {
+        transform: translate(10px, -10px) scale(0.8);
+    }
+    54% {
+        transform: translate(10px, 10px) scale(0.7);
+    }
+    72% {
+        transform: translate(-10px, 10px) scale(0.8);
+    }
+    88% {
+        transform: translate(-10px, -10px) scale(0.9);
+    }
+    100% {
+        transform: translate(0, -10px) scale(1);
+    }
 }
 
 * {
@@ -88,14 +136,20 @@ h2 {
     background: transparent;
     width: 100%;
     cursor: pointer;
-    transition: all .3s ease;
     padding: 10px 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .startButton:hover {
     background: rgba(0, 0, 0, 0.2);
     border: solid 2px #ccc;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .qButton {
@@ -109,8 +163,8 @@ h2 {
     width: 100%;
     padding: 5px 0;
     cursor: pointer;
-    transition: all .3s ease;
     margin-top: 15px;
+    transition: all .3s ease;
 }
 
 .qButton:hover {
@@ -138,6 +192,7 @@ p {
     .imgDiv {
         display: none;
     }
+
     .msgDiv {
         width: 100%;
     }
@@ -147,11 +202,11 @@ p {
     .startButton {
         font-size: 24px;
     }
+
     .qButton {
         font-size: 24px;
     }
 }
-
 
 .carousel {
     height: 20px;
@@ -159,52 +214,7 @@ p {
     background-color: #ccc;
     border-radius: 100%;
     -webkit-animation: move 1s infinite;
+    animation: move 1s infinite;
 }
 
-
-@keyframes move {
-  0% {
-      transform: translateY(-10px) scale(1);
-  }
-  18% {
-      transform: translateY(-10px) scale(0.9);
-  }
-  36% {
-      transform: translate(10px, -10px) scale(0.8);
-  }
-  54% {
-      transform: translate(10px, 10px) scale(0.7);
-  }
-  72% {
-      transform: translate(-10px, 10px) scale(0.8);
-  }
-  88% {
-      transform: translate(-10px, -10px) scale(0.9);
-  }
-  100% {
-      transform: translate(0, -10px) scale(1);
-  }
-}
-@-webkit-keyframes move {
-  0% {
-      transform: translateY(-10px) scale(1);
-  }
-  18% {
-      transform: translateY(-10px) scale(0.9);
-  }
-  36% {
-      transform: translate(10px, -10px) scale(0.8);
-  }
-  54% {
-      transform: translate(10px, 10px) scale(0.7);
-  }
-  72% {
-      transform: translate(-10px, 10px) scale(0.8);
-  }
-  88% {
-      transform: translate(-10px, -10px) scale(0.9);
-  }
-  100% {
-      transform: translate(0, -10px) scale(1);
-  }
-}
+/*# sourceMappingURL=stylex.css.map */
